@@ -2,7 +2,9 @@
 ## Intro
 
 The data from this project came from Kaggle, as usual, and can be found here:
-https://www.kaggle.com/ruslankl/european-union-lgbt-survey-2012
+https://www.kaggle.com/ruslankl/european-union-lgbt-survey-2012 I first stumbed
+upon this data a few months ago and thought it would be an interesting project to
+do. 
 
 
 # Getting started
