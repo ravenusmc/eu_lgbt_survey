@@ -2,8 +2,8 @@
   <div>
     <header>
       <div id="nav">
-        <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link>
+        <router-link class='router_text' to="/">EU LGBT SURVEY</router-link> |
+        <router-link class='router_text' to="/about">ABOUT</router-link>
       </div>
     </header>
   </div>
@@ -20,6 +20,24 @@ export default {
 Header {
   background: #00AFC9;
   height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#nav {
+  margin-left: 3%;
+  color: white;
+}
+
+.router_text {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.router_text:hover {
+  color: yellow;
 }
 
 </style>
