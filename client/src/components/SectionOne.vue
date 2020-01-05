@@ -1,6 +1,8 @@
 <template>
   <div>
-    section one
+    <section>
+      <h1>Initial chart</h1>
+    </section>
   </div>
 </template>
 
