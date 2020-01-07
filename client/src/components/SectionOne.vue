@@ -14,6 +14,13 @@
 <script>
 export default {
   name: 'SectionOne',
+  data() {
+    states: ['All', 'Austria', 'Belgium', 'Bulgaria', 'Cyprus', 'Czech Republic', 'Germany',
+     'Denmark', 'Estonia', 'Greece', 'Spain', 'Finland', 'France', 'Croatia',
+     'Hungary', 'Ireland', 'Italy', 'Lithuania', 'Luxembourg', 'Latvia', 'Malta',
+     'Netherlands', 'Poland', 'Portugal', 'Romania', 'Sweden', 'Slovenia',
+     'Slovakia', 'United Kingdom']
+  },
   methods: {
     submitSelection(evt) {
       evt.preventDefault();
