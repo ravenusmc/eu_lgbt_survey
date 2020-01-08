@@ -13,7 +13,7 @@ class Test():
         print(self.data.head())
 
     def show_Unique_Elements(self):
-        print(self.data['CountryCode'].unique())
+        print(self.data['question_label'].unique())
 
 
 test = Test()
