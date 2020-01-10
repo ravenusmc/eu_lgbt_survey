@@ -1,17 +1,44 @@
 [
-'In your opinion, how widespread is offensive language about lesbian, gay, bisexual and/or
+--------------------------
+1. 'In your opinion, how widespread is offensive language about lesbian, gay, bisexual and/or
 transgender people by politicians in the country where you live?'
- 'In your opinion, how widespread are positive measures to promote respect for the human rights of lesbian, gay or bisexual people in the country where you live? *'
+['Very widespread' 'Fairly widespread' 'Fairly rare' 'Very rare'
+ 'Don`t know']
+ --------------------------
 
-'In your opinion, how widespread is same-sex partners holding hands in public in the country where you live?'
-'In your opinion, how widespread are expressions of hatred and aversion towards lesbian, gay, bisexual and/or transgender in public in the country where you live?'
-'In your opinion, how widespread are assaults and harassment against lesbian, gay, bisexual and/or transgender people in the country where you live?'
+--------------------------
+ 2. 'In your opinion, how widespread are positive measures to promote respect for the human rights of lesbian, gay or bisexual people in the country where you live? *'
+ ['Very widespread' 'Fairly widespread' 'Fairly rare' 'Very rare'
+  'Don`t know']
+--------------------------
+
+--------------------------
+3. 'In your opinion, how widespread is same-sex partners holding hands in public in the country where you live?'
+=> ['Very widespread' 'Fairly widespread' 'Fairly rare' 'Very rare', 'Don`t know']
+--------------------------
+
+--------------------------
+4. 'In your opinion, how widespread are expressions of hatred and aversion towards lesbian, gay, bisexual and/or transgender in public in the country where you live?'
+['Very widespread' 'Fairly widespread' 'Fairly rare' 'Very rare'
+ 'Don`t know']
+--------------------------
 
 
-'What best describes your current situation in the country where you live *'
+--------------------------
+5. 'In your opinion, how widespread are assaults and harassment against lesbian, gay, bisexual and/or transgender people in the country where you live?'
+['Very widespread' 'Fairly widespread' 'Fairly rare' 'Very rare'
+ 'Don`t know']
+--------------------------
+
+--------------------------
+6. 'In your opinion, how widespread are casual jokes in everyday life about lesbian, gay, bisexual and/or transgender people in the country you live?'
+['Very widespread' 'Fairly widespread' 'Fairly rare' 'Very rare'
+ 'Don`t know']
+--------------------------
+
+
+POSSIBLE QUESTIONS:
+
 'In your opinion, how widespread is heterosexual partners holding hands in public in the country where you live?'
 'In your opinion, how widespread are casual jokes in everyday life about lesbian, gay, bisexual and/or transgender people in the country you live?'
-
-
-
 ]
