@@ -5,6 +5,7 @@
       </div>
       <div>
         <h1 class='center'>The Study</h1>
+        <p></p>
       </div>
     </section>
   </div>
