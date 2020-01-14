@@ -1,11 +1,10 @@
 <template>
   <div>
     <section>
-      <h1>Initial Study</h1>
       <form @submit="submitSelection">
 
         <div>
-          <h3>Select the Country:</h3>
+          <h3 class='font formTitles'>Select the Country:</h3>
           <select v-model="state" name="state">
             <option v-for="state in states" v-bind:key="state" :value="state">
               {{ state }}
@@ -14,7 +13,7 @@
         </div>
 
         <div>
-          <h3>Select the Orientation:</h3>
+          <h3 class='font formTitles'>Select the Orientation:</h3>
           <select v-model="orientation" name="orientation">
             <option v-for="orientation in orientations" v-bind:key="orientation"
             :value="orientation">
@@ -24,7 +23,7 @@
         </div>
 
         <div>
-          <button>Submit</button>
+          <button class='font formTitles'>Submit</button>
         </div>
       </form>
     </section>
@@ -56,7 +55,16 @@ export default {
 </script>
 
 <style scoped>
+
+.formTitles {
+  text-transform: uppercase;
+}
+
 form {
-  display: 2px solid blue;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  padding: 75px;
+  background-color: #8AB8DF;
 }
 </style>
