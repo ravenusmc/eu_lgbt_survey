@@ -27,14 +27,15 @@ export default {
 }
 
 button {
-  background-color: #349CF4;
+  background-color: #F48C34;
   border-radius: 6px;
   padding: 12px;
-  border-color: #349CF4;
+  border-color: #F48C34;
 }
 
 button:hover {
-  background-color: #F48C34;
-  border-color:  #F48C34;
+  background-color: #00AFC9;
+  border-color:  #00AFC9;
 }
+
 </style>

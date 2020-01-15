@@ -3,7 +3,7 @@
     <section>
       <form @submit="submitSelection">
 
-        <div>
+        <div class='selectionFix'>
           <h3 class='font formTitles'>Select the Country:</h3>
           <select v-model="state" name="state">
             <option v-for="state in states" v-bind:key="state" :value="state">
@@ -12,7 +12,7 @@
           </select>
         </div>
 
-        <div>
+        <div class='selectionFix'>
           <h3 class='font formTitles'>Select the Orientation:</h3>
           <select v-model="orientation" name="orientation">
             <option v-for="orientation in orientations" v-bind:key="orientation"
@@ -22,7 +22,7 @@
           </select>
         </div>
 
-        <div>
+        <div class='selectionFix'>
           <button class='font formTitles'>Submit</button>
         </div>
       </form>
@@ -65,6 +65,13 @@ form {
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   padding: 75px;
-  background-color: #8AB8DF;
+  background-color: #00AFC9;
+}
+
+.selectionFix {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 </style>
