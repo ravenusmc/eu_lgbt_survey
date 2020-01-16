@@ -31,6 +31,8 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
+
 export default {
   name: 'SectionOne',
   data() {
@@ -46,9 +48,16 @@ export default {
     };
   },
   methods: {
+    ...mapActions([
+      'fetchQuestionOneData',
+    ]),
     submitSelection(evt) {
       evt.preventDefault();
-      console.log('HI');
+      const payload = {
+        state: this.state,
+        orientation: this.orientation,
+      };
+      this.fetchQuestionOneData({ payload });
     },
   },
 };
