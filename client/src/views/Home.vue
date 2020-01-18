@@ -2,6 +2,7 @@
   <div class="home">
     <Intro />
     <SectionOne/>
+    <Study/>
   </div>
 </template>
 
@@ -9,6 +10,7 @@
 // @ is an alias to /src
 import Intro from '@/components/Intro.vue';
 import SectionOne from '@/components/SectionOne.vue';
+import Study from '@/components/Study.vue';
 
 
 export default {
@@ -16,6 +18,7 @@ export default {
   components: {
     SectionOne,
     Intro,
+    Study,
   },
 };
 </script>
