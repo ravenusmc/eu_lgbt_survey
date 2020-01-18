@@ -23,7 +23,7 @@ def DeathData():
         state = post_data['state']
         orientation = post_data['orientation']
         question_one_data = data.question_one_data(state, orientation)
-        return jsonify('Hi')
+        return jsonify(question_one_data)
 
 
 if __name__ == '__main__':

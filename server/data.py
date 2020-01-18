@@ -12,7 +12,7 @@ class Data():
 
     def question_one_data(self, state, orientation):
         question_one_data = []
-        columns = ['View', 'Count']
+        columns = ['View', 'Percentage']
         question_one_data.append(columns)
         data_set = self.data[(self.data.CountryCode == state) & (self.data.subset == orientation)]
         data_set = data_set[(data_set.question_code == 'b1_a')]
@@ -21,13 +21,14 @@ class Data():
             rows = []
             loop_data_set = data_set
             loop_data_set = loop_data_set[(loop_data_set.answer == value)]
-            print(loop_data_set.head())
-            print(loop_data_set['answer'].count())
-            input()
+            percentage_point = loop_data_set['percentage']
+            rows.append(value)
+            rows.append(percentage_point.iloc[0])
+            question_one_data.append(rows)
+        return question_one_data
 
 
 
-        print(values)
 
-data = Data()
-data.question_one_data('Austria', 'Lesbian')
+# data = Data()
+# data.question_one_data('Austria', 'Lesbian')
