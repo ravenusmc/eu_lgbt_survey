@@ -6,6 +6,11 @@
       :data='questionOneData'
       :options='chartOptionsOne'>
       </GraphCard>
+      <GraphCard
+      :typeOne='typeOne'
+      :data='questionOneData'
+      :options='chartOptionsOne'>
+      </GraphCard>
     </section>
   </div>
 </template>
