@@ -23,7 +23,7 @@ class Data():
             loop_data_set = loop_data_set[(loop_data_set.answer == value)]
             percentage_point = loop_data_set['percentage']
             rows.append(value)
-            rows.append(percentage_point.iloc[0])
+            rows.append(int(percentage_point.iloc[0]))
             question_one_data.append(rows)
         return question_one_data
 
