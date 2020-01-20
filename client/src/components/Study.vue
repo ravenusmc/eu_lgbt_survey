@@ -28,7 +28,7 @@ export default {
     return {
       typeOne: 'BarChart',
       chartOptionsOne: {
-        title: 'Question One Data',
+        title: 'Question 1',
         legend: { position: 'top' },
         height: 500,
         vAxis: {

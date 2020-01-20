@@ -1,7 +1,8 @@
 <template>
   <div>
-    <section>
       <form @submit="submitSelection">
+
+        <h1 class='formTitle form center'>Please Select from the Below:</h1>
 
         <div class='selectionFix'>
           <h3 class='font formTitles'>Select the Country:</h3>
@@ -26,7 +27,6 @@
           <button class='font formTitles'>Submit</button>
         </div>
       </form>
-    </section>
   </div>
 </template>
 
@@ -37,14 +37,14 @@ export default {
   name: 'SectionOne',
   data() {
     return {
-      state: 'All',
-      states: ['All', 'Austria', 'Belgium', 'Bulgaria', 'Cyprus', 'Czech Republic', 'Germany',
+      state: 'Austria',
+      states: ['Austria', 'Belgium', 'Bulgaria', 'Cyprus', 'Czech Republic', 'Germany',
         'Denmark', 'Estonia', 'Greece', 'Spain', 'Finland', 'France', 'Croatia',
         'Hungary', 'Ireland', 'Italy', 'Lithuania', 'Luxembourg', 'Latvia', 'Malta',
         'Netherlands', 'Poland', 'Portugal', 'Romania', 'Sweden', 'Slovenia',
         'Slovakia', 'United Kingdom'],
-      orientation: 'All',
-      orientations: ['All', 'Lesbian', 'Gay', 'Bisexual women', 'Bisexual men', 'Transgender'],
+      orientation: 'Lesbian',
+      orientations: ['Lesbian', 'Gay', 'Bisexual women', 'Bisexual men', 'Transgender'],
     };
   },
   methods: {
@@ -65,19 +65,29 @@ export default {
 
 <style scoped>
 
+.formTitle {
+  text-transform: uppercase;
+}
+
 .formTitles {
   text-transform: uppercase;
 }
 
 form {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 67%;
+  /* display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
+  justify-items: center; */
   padding: 75px;
   background-color: #00AFC9;
 }
 
 .selectionFix {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;

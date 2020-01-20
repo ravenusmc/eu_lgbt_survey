@@ -1,7 +1,10 @@
 <template>
   <div class="home">
     <Intro />
-    <SectionOne/>
+    <section id='formSection'>
+      <SectionOne/>
+      <Questions/>
+    </section>
     <Study/>
   </div>
 </template>
@@ -10,6 +13,7 @@
 // @ is an alias to /src
 import Intro from '@/components/Intro.vue';
 import SectionOne from '@/components/SectionOne.vue';
+import Questions from '@/components/Questions.vue';
 import Study from '@/components/Study.vue';
 
 
@@ -17,6 +21,7 @@ export default {
   name: 'home',
   components: {
     SectionOne,
+    Questions,
     Intro,
     Study,
   },
@@ -24,6 +29,10 @@ export default {
 </script>
 
 <style>
+
+.center {
+  text-align: center;
+}
 
 .font {
   font-family: 'Baskervville', serif;
@@ -39,6 +48,15 @@ button {
 button:hover {
   background-color: #00AFC9;
   border-color:  #00AFC9;
+}
+
+#formSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; */
 }
 
 </style>

@@ -6,7 +6,12 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    questionOneData: [],
+    questionOneData: [['View', 'Percentage'],
+      ['Fairly rare', 45],
+      ['Fairly widespread', 34],
+      ['Very rare', 9],
+      ['Very widespread', 8],
+      ['Don`t know', 4]],
   },
 
   getters: {
@@ -21,6 +26,7 @@ export default new Vuex.Store({
       axios.post(path, payload)
         .then((res) => {
           res.data.sort((a, b) => b[1] - a[1]);
+          console.log(res.data);
           commit('setQuestionOneData', res.data);
         });
     },
