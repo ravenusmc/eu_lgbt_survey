@@ -15,6 +15,7 @@ class Data():
         columns = ['View', 'Percentage']
         question_one_data.append(columns)
         data_set = self.data[(self.data.CountryCode == state) & (self.data.subset == orientation)]
+        questionCodes = ['b1_a', 'b1_e', 'b1_c', 'b1_d', 'b1_b']
         data_set = data_set[(data_set.question_code == 'b1_a')]
         values = ['Very widespread', 'Fairly widespread', 'Fairly rare', 'Very rare', 'Don`t know']
         for value in values:

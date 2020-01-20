@@ -11,11 +11,13 @@ transgender people by politicians in the country where you live?'
  for the human rights of lesbian, gay or bisexual people in the country where you live? *'
  ['Very widespread' 'Fairly widespread' 'Fairly rare' 'Very rare'
   'Don`t know']
+  NO DATA???
 --------------------------
 
 --------------------------
 3. 'In your opinion, how widespread is same-sex partners holding hands in public in the country where you live?'
 => ['Very widespread' 'Fairly widespread' 'Fairly rare' 'Very rare', 'Don`t know']
+b1_e
 --------------------------
 
 --------------------------
@@ -23,6 +25,7 @@ transgender people by politicians in the country where you live?'
 bisexual and/or transgender in public in the country where you live?'
 ['Very widespread' 'Fairly widespread' 'Fairly rare' 'Very rare'
  'Don`t know']
+ b1_c
 --------------------------
 
 
@@ -31,6 +34,7 @@ bisexual and/or transgender in public in the country where you live?'
 bisexual and/or transgender people in the country where you live?'
 ['Very widespread' 'Fairly widespread' 'Fairly rare' 'Very rare'
  'Don`t know']
+ b1_d
 --------------------------
 
 --------------------------
@@ -38,6 +42,7 @@ bisexual and/or transgender people in the country where you live?'
 bisexual and/or transgender people in the country you live?'
 ['Very widespread' 'Fairly widespread' 'Fairly rare' 'Very rare'
  'Don`t know']
+ 	b1_b
 --------------------------
 
 

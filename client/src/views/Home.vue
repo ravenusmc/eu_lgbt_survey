@@ -42,12 +42,12 @@ button {
   background-color: #F48C34;
   border-radius: 6px;
   padding: 12px;
-  border-color: #F48C34;
+  border-color: #333;
 }
 
 button:hover {
   background-color: #00AFC9;
-  border-color:  #00AFC9;
+  border-color: #333;
 }
 
 #formSection {
