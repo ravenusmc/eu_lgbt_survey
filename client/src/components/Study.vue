@@ -8,8 +8,8 @@
       </GraphCard>
       <GraphCard
       :typeOne='typeOne'
-      :data='questionOneData'
-      :options='chartOptionsOne'>
+      :data='questionTwoData'
+      :options='chartOptionsTwo'>
       </GraphCard>
     </section>
   </div>
@@ -37,11 +37,22 @@ export default {
           },
         },
       },
+      chartOptionsTwo: {
+        title: 'Question 2',
+        legend: { position: 'top' },
+        height: 500,
+        vAxis: {
+          viewWindow: {
+            min: 0,
+          },
+        },
+      },
     };
   },
   computed: {
     ...mapGetters([
       'questionOneData',
+      'questionTwoData',
     ]),
   },
 };
