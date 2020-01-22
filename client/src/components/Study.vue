@@ -16,6 +16,16 @@
       :data='questionThreeData'
       :options='chartOptionsThree'>
       </GraphCard>
+      <GraphCard
+      :typeOne='typeOne'
+      :data='questionFourData'
+      :options='chartOptionsFour'>
+      </GraphCard>
+      <GraphCard
+      :typeOne='typeOne'
+      :data='questionFiveData'
+      :options='chartOptionsFive'>
+      </GraphCard>
     </section>
   </div>
 </template>
@@ -62,6 +72,26 @@ export default {
           },
         },
       },
+      chartOptionsFour: {
+        title: 'Question 4',
+        legend: { position: 'top' },
+        height: 500,
+        vAxis: {
+          viewWindow: {
+            min: 0,
+          },
+        },
+      },
+      chartOptionsFive: {
+        title: 'Question 5',
+        legend: { position: 'top' },
+        height: 500,
+        vAxis: {
+          viewWindow: {
+            min: 0,
+          },
+        },
+      },
     };
   },
   computed: {
@@ -69,6 +99,8 @@ export default {
       'questionOneData',
       'questionTwoData',
       'questionThreeData',
+      'questionFourData',
+      'questionFiveData',
     ]),
   },
 };

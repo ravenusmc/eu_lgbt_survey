@@ -24,14 +24,26 @@ export default new Vuex.Store({
       ['Very widespread', 9],
       ['Very rare', 7],
       ['Don`t know', 2]],
-    questionFourData: [],
-    questionFiveData: [],
+    questionFourData: [['View', 'Percentage'],
+      ['Fairly rare', 56],
+      ['Fairly widespread', 21],
+      ['Very rare', 10],
+      ['Don`t know', 8],
+      ['Very widespread', 5]],
+    questionFiveData: [['View', 'Percentage'],
+      ['Fairly widespread', 46],
+      ['Very widespread', 41],
+      ['Fairly rare', 10],
+      ['Very rare', 2],
+      ['Don`t know', 1]],
   },
 
   getters: {
     questionOneData: state => state.questionOneData,
     questionTwoData: state => state.questionTwoData,
     questionThreeData: state => state.questionThreeData,
+    questionFourData: state => state.questionFourData,
+    questionFiveData: state => state.questionFiveData,
   },
 
   actions: {
@@ -44,10 +56,14 @@ export default new Vuex.Store({
           res.data[0].sort((a, b) => b[1] - a[1]);
           res.data[1].sort((a, b) => b[1] - a[1]);
           res.data[2].sort((a, b) => b[1] - a[1]);
-          console.log(res.data[2]);
+          res.data[3].sort((a, b) => b[1] - a[1]);
+          res.data[4].sort((a, b) => b[1] - a[1]);
+          console.log(res.data[4]);
           commit('setQuestionOneData', res.data[0]);
           commit('setQuestionTwoData', res.data[1]);
           commit('setQuestionThreeData', res.data[2]);
+          commit('setQuestionFourData', res.data[3]);
+          commit('setQuestionFiveData', res.data[4]);
         });
     },
 
@@ -65,6 +81,14 @@ export default new Vuex.Store({
 
     setQuestionThreeData(state, data) {
       state.questionThreeData = data;
+    },
+
+    setQuestionFourData(state, data) {
+      state.questionFourData = data;
+    },
+
+    setQuestionFiveData(state, data) {
+      state.questionFiveData = data;
     },
 
   },
