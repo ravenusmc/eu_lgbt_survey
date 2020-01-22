@@ -11,6 +11,11 @@
       :data='questionTwoData'
       :options='chartOptionsTwo'>
       </GraphCard>
+      <GraphCard
+      :typeOne='typeOne'
+      :data='questionThreeData'
+      :options='chartOptionsThree'>
+      </GraphCard>
     </section>
   </div>
 </template>
@@ -47,12 +52,23 @@ export default {
           },
         },
       },
+      chartOptionsThree: {
+        title: 'Question 3',
+        legend: { position: 'top' },
+        height: 500,
+        vAxis: {
+          viewWindow: {
+            min: 0,
+          },
+        },
+      },
     };
   },
   computed: {
     ...mapGetters([
       'questionOneData',
       'questionTwoData',
+      'questionThreeData',
     ]),
   },
 };

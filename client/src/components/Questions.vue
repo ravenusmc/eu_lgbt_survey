@@ -7,10 +7,6 @@
         where you live?
       </li>
       <li class='font'>
-        In your opinion, how widespread are positive measures to promote respect
-        for the human rights of lesbian, gay or bisexual people in the country where you live?
-      </li>
-      <li class='font'>
         In your opinion, how widespread is same-sex partners holding hands in public
         in the country where you live?
       </li>

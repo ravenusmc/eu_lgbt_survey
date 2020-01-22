@@ -18,26 +18,36 @@ export default new Vuex.Store({
       ['Fairly widespread', 15],
       ['Very widespread', 4],
       ['Don`t know', 0]],
+    questionThreeData: [['View', 'Percentage'],
+      ['Fairly rare', 43],
+      ['Fairly widespread', 39],
+      ['Very widespread', 9],
+      ['Very rare', 7],
+      ['Don`t know', 2]],
+    questionFourData: [],
+    questionFiveData: [],
   },
 
   getters: {
     questionOneData: state => state.questionOneData,
     questionTwoData: state => state.questionTwoData,
+    questionThreeData: state => state.questionThreeData,
   },
 
   actions: {
 
-    // Fetch Question one data
+    // Fetch data for each question
     fetchQuestionOneData: ({ commit }, { payload }) => {
       const path = 'http://localhost:5000/firstQuestionData';
       axios.post(path, payload)
         .then((res) => {
-          // console.log(res.data[1]);
           res.data[0].sort((a, b) => b[1] - a[1]);
           res.data[1].sort((a, b) => b[1] - a[1]);
-          // console.log(res.data[1]);
+          res.data[2].sort((a, b) => b[1] - a[1]);
+          console.log(res.data[2]);
           commit('setQuestionOneData', res.data[0]);
           commit('setQuestionTwoData', res.data[1]);
+          commit('setQuestionThreeData', res.data[2]);
         });
     },
 
@@ -51,6 +61,10 @@ export default new Vuex.Store({
 
     setQuestionTwoData(state, data) {
       state.questionTwoData = data;
+    },
+
+    setQuestionThreeData(state, data) {
+      state.questionThreeData = data;
     },
 
   },
