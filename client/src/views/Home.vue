@@ -53,10 +53,15 @@ button:hover {
 #formSection {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; */
+}
+
+/* Media Queries */
+@media only all and (max-width: 900px){
+
+  #formSection {
+    grid-template-columns: 1fr;
+  }
+
 }
 
 </style>

@@ -111,4 +111,18 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+/* Media Queries */
+@media only all and (max-width: 900px){
+
+  section {
+    grid-template-columns: 1fr;
+  }
+
+  GraphCard {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+}
 </style>

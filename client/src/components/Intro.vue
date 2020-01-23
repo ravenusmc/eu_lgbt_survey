@@ -69,4 +69,13 @@ section {
   font-family: 'Baskervville', serif;
 }
 
+/* Media Queries */
+@media only all and (max-width: 900px){
+
+  section {
+    grid-template-columns: 1fr;
+  }
+
+}
+
 </style>
