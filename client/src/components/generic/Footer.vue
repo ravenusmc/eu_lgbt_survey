@@ -32,7 +32,7 @@ footer {
   justify-content: center;
   align-items: center;
   background: #00AFC9;
-  height: 400px;
+  height: 300px;
 }
 
 .footer_fix {

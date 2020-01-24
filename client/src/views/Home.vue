@@ -6,6 +6,8 @@
       <Questions/>
     </section>
     <Study/>
+    <hr>
+    <Map/>
     <Footer/>
   </div>
 </template>
@@ -16,6 +18,7 @@ import Intro from '@/components/Intro.vue';
 import SectionOne from '@/components/SectionOne.vue';
 import Questions from '@/components/Questions.vue';
 import Study from '@/components/Study.vue';
+import Map from '@/components/charts/Map.vue';
 import Footer from '@/components/generic/Footer.vue';
 
 
@@ -26,6 +29,7 @@ export default {
     Questions,
     Intro,
     Study,
+    Map,
     Footer,
   },
 };
