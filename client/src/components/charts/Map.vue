@@ -1,10 +1,14 @@
 <template>
   <div>
-    <vue-chart
-    chart-type="GeoChart"
-    :columns="columns"
-    :rows="rows"
-    :options="options"></vue-chart>
+    <h1 class='font center'>Map Area</h1>
+    <section id='map_section'>
+      <vue-chart
+      chart-type="GeoChart"
+      :columns="columns"
+      :rows="rows"
+      :options="options">
+      </vue-chart>
+    </section>
   </div>
 </template>
 
@@ -14,19 +18,14 @@ export default {
   data() {
     return {
       columns: [{
-        'type': 'string',
-        'label': 'Country',
+        type: 'string',
+        label: 'Country',
       }, {
-        'type': 'number',
-        'label': 'Suicides',
+        type: 'number',
+        label: 'Popularity',
       }],
-      rows: [['Country', 'Popularity'],
-        ['Germany', 200],
-        ['United States', 300],
-        ['Brazil', 400],
-        ['Canada', 500],
-        ['France', 600],
-        ['RU', 700]],
+      rows: [['Germany', 200],
+        ['France', 600]],
       options: {
         title: 'Suicide by Countries',
         width: 900,
@@ -38,4 +37,10 @@ export default {
 </script>
 
 <style scoped>
+#map_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 </style>
