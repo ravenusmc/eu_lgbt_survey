@@ -1,5 +1,6 @@
 <template>
   <div>
+    <MapForm/>
     <h1 class='font center'>Map Area</h1>
     <section id='map_section'>
       <vue-chart
@@ -13,8 +14,13 @@
 </template>
 
 <script>
+import MapForm from '@/components/forms/MapForm.vue';
+
 export default {
   name: 'Map',
+  components: {
+    MapForm,
+  },
   data() {
     return {
       columns: [{
