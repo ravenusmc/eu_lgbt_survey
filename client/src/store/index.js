@@ -49,7 +49,7 @@ export default new Vuex.Store({
   actions: {
 
     // Fetch data for each question
-    fetchQuestionOneData: ({ commit }, { payload }) => {
+    fetchChartData: ({ commit }, { payload }) => {
       const path = 'http://localhost:5000/firstQuestionData';
       axios.post(path, payload)
         .then((res) => {

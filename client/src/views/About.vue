@@ -16,7 +16,7 @@
         <img src='https://docs.google.com/uc?export=download&id=1h59Jke3NUudzscY9ej0A83Sj7bq9sPta'>
       </div>
 
-      <div class='bio_div'>
+      <div class='font bio_div'>
         <p>
           In the spring of 2015, I chose to take a leap in a new direction and
           immerse myself in learning full stack web development. I attended the

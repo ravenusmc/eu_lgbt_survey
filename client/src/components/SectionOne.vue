@@ -57,7 +57,7 @@ export default {
         state: this.state,
         orientation: this.orientation,
       };
-      this.fetchQuestionOneData({ payload });
+      this.fetchChartData({ payload });
     },
   },
 };

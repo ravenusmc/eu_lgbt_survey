@@ -38,7 +38,7 @@ Header {
 }
 
 .router_text:hover {
-  color: yellow;
+  color: #F48C34;
 }
 
 </style>
