@@ -3,6 +3,7 @@
     <header>
       <div id="nav">
         <router-link class='router_text' to="/">EU LGBT SURVEY</router-link> |
+        <router-link class='router_text' to="/map">MAP PAGE</router-link> |
         <router-link class='router_text' to="/about">ABOUT</router-link>
       </div>
     </header>

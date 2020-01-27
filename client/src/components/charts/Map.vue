@@ -17,7 +17,7 @@
 import MapForm from '@/components/forms/MapForm.vue';
 
 export default {
-  name: 'Map',
+  name: 'EuropeMap',
   components: {
     MapForm,
   },
@@ -33,6 +33,7 @@ export default {
       rows: [['Germany', 200],
         ['France', 600]],
       options: {
+        region: '150', // Africa
         title: 'Suicide by Countries',
         width: 900,
         height: 500,
