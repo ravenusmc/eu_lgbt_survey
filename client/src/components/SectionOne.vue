@@ -79,9 +79,6 @@ form {
   justify-content: center;
   align-items: center;
   height: 67%;
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center; */
   padding: 75px;
   background-color: #00AFC9;
 }

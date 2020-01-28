@@ -1,9 +1,9 @@
 <template>
   <div>
-    <MapForm/>
     <h1 class='font center'>Map Area</h1>
+    <MapForm/>
     <section id='map_section'>
-      <vue-chart
+      <vue-chart id='map_section'
       chart-type="GeoChart"
       :columns="columns"
       :rows="rows"
@@ -33,7 +33,7 @@ export default {
       rows: [['Germany', 200],
         ['France', 600]],
       options: {
-        region: '150', // Africa
+        region: '150', // Europe Code
         title: 'Suicide by Countries',
         width: 900,
         height: 500,
@@ -49,5 +49,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 </style>

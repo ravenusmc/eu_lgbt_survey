@@ -39,6 +39,9 @@ class Data():
             count += 1
         return data_lists
 
+    def get_map_data(self, data):
+        return 1
+
 
 
 

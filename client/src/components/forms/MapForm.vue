@@ -20,12 +20,16 @@
         </select>
       </div>
 
-      <button>Submit</button>
+      <div class='selectionFix'>
+        <button>Submit</button>
+      </div>
     </form>
   </div>
 </template>
 
 <script>
+import { mapActions } from 'vuex';
+
 export default {
   name: 'MapForm',
   data() {
@@ -42,17 +46,36 @@ export default {
     };
   },
   methods: {
+    ...mapActions([
+      'fetchMapData',
+    ]),
     submitForm(evt) {
       evt.preventDefault();
       const payload = {
         question: this.question,
         answer: this.answer,
       };
-      console.log({ payload });
+      this.fetchMapData({ payload });
     },
   },
 };
 </script>
 
 <style scoped>
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #00AFC9;
+  padding: 20px;
+}
+
+.selectionFix {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 </style>

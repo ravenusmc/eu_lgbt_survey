@@ -36,6 +36,7 @@ export default new Vuex.Store({
       ['Fairly rare', 10],
       ['Very rare', 2],
       ['Don`t know', 1]],
+    mapData: [],
   },
 
   getters: {
@@ -44,11 +45,12 @@ export default new Vuex.Store({
     questionThreeData: state => state.questionThreeData,
     questionFourData: state => state.questionFourData,
     questionFiveData: state => state.questionFiveData,
+    mapData: state => state.mapData,
   },
 
   actions: {
 
-    // Fetch data for each question
+    // Fetch and set the data for all the charts.
     fetchChartData: ({ commit }, { payload }) => {
       const path = 'http://localhost:5000/firstQuestionData';
       axios.post(path, payload)
@@ -58,12 +60,20 @@ export default new Vuex.Store({
           res.data[2].sort((a, b) => b[1] - a[1]);
           res.data[3].sort((a, b) => b[1] - a[1]);
           res.data[4].sort((a, b) => b[1] - a[1]);
-          console.log(res.data[4]);
           commit('setQuestionOneData', res.data[0]);
           commit('setQuestionTwoData', res.data[1]);
           commit('setQuestionThreeData', res.data[2]);
           commit('setQuestionFourData', res.data[3]);
           commit('setQuestionFiveData', res.data[4]);
+        });
+    },
+
+    // This action will get the data for the map
+    fetchMapData: ({ commit }, { payload }) => {
+      const path = 'http://localhost:5000/fetchMapData';
+      axios.post(path, payload)
+        .then((res) => {
+          commit('setMapData', res.data);
         });
     },
 
@@ -89,6 +99,10 @@ export default new Vuex.Store({
 
     setQuestionFiveData(state, data) {
       state.questionFiveData = data;
+    },
+
+    setMapData(state, data) {
+      state.mapData = data;
     },
 
   },

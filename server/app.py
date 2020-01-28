@@ -14,7 +14,7 @@ app.config.from_object(__name__)
 # enable CORS
 CORS(app)
 
-#This route will get the data for the first question
+#This route will get the data for the charts
 @app.route('/firstQuestionData', methods=['GET', 'POST'])
 def DeathData():
     if request.method == 'POST':
@@ -24,6 +24,15 @@ def DeathData():
         orientation = post_data['orientation']
         question_one_data = data.question_one_data(state, orientation)
         return jsonify(question_one_data)
+
+#This route will get the data for the map page
+@app.route('/fetchMapData', methods=['GET', 'POST'])
+def map_data():
+    if request.method == 'POST':
+        data = Data()
+        post_data = request.get_json()
+        map_data = data.get_map_data(post_data)
+        return jsonify('Works!')
 
 
 if __name__ == '__main__':
