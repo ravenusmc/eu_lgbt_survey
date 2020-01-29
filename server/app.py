@@ -32,7 +32,7 @@ def map_data():
         data = Data()
         post_data = request.get_json()
         map_data = data.get_map_data(post_data)
-        return jsonify('Works!')
+        return jsonify(map_data)
 
 
 if __name__ == '__main__':

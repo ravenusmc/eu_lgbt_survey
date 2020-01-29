@@ -21,6 +21,15 @@
       </div>
 
       <div class='selectionFix'>
+        <h3 class='font formTitles'>Select the Sex Choice:</h3>
+        <select v-model="sex" name="sex">
+          <option v-for="sex in sexChoices" v-bind:key="sex" :value="sex">
+            {{ sex }}
+          </option>
+        </select>
+      </div>
+
+      <div class='selectionFix'>
         <button>Submit</button>
       </div>
     </form>
@@ -34,6 +43,8 @@ export default {
   name: 'MapForm',
   data() {
     return {
+      sex: 'Lesbian',
+      sexChoices: ['Lesbian', 'Gay', 'Bisexual women', 'Bisexual men', 'Transgender'],
       answer: 'Very widespread',
       answers: ['Very widespread', 'Fairly widespread', 'Fairly rare', 'Very rare',
         'Don`t know'],
@@ -54,6 +65,7 @@ export default {
       const payload = {
         question: this.question,
         answer: this.answer,
+        sex: this.sex,
       };
       this.fetchMapData({ payload });
     },

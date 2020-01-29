@@ -6,7 +6,7 @@
       <vue-chart id='map_section'
       chart-type="GeoChart"
       :columns="columns"
-      :rows="rows"
+      :rows='mapData'
       :options="options">
       </vue-chart>
     </section>
@@ -14,6 +14,7 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 import MapForm from '@/components/forms/MapForm.vue';
 
 export default {
@@ -28,7 +29,7 @@ export default {
         label: 'Country',
       }, {
         type: 'number',
-        label: 'Popularity',
+        label: 'Percentage',
       }],
       rows: [['Germany', 200],
         ['France', 600]],
@@ -39,6 +40,11 @@ export default {
         height: 500,
       },
     };
+  },
+  computed: {
+    ...mapGetters([
+      'mapData',
+    ]),
   },
 };
 </script>

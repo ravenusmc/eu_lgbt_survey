@@ -4,6 +4,7 @@
 import numpy as np
 import pandas as pd
 import datetime
+from support import *
 
 class Data():
 
@@ -40,7 +41,30 @@ class Data():
         return data_lists
 
     def get_map_data(self, data):
-        return 1
+        answer = data['answer']
+        sex = data['sex']
+        #The support class is called to convert the question to the question code
+        support = Support()
+        question_code = support.get_question_code(data)
+        #Creating a new dataset based on the data that the user selects
+        data_set = self.data[(self.data.question_code == question_code) & (self.data.answer == answer)
+        & (self.data.subset == sex)]
+        states = ['Austria', 'Belgium', 'Bulgaria', 'Cyprus', 'Czech Republic', 'Germany',
+            'Denmark', 'Estonia', 'Greece', 'Spain', 'Finland', 'France', 'Croatia',
+            'Hungary', 'Ireland', 'Italy', 'Lithuania', 'Luxembourg', 'Latvia', 'Malta',
+            'Netherlands', 'Poland', 'Portugal', 'Romania', 'Sweden', 'Slovenia',
+            'Slovakia', 'United Kingdom']
+        map_data = []
+        for state in states:
+            rows = []
+            #The data set needs to be reset during each loop
+            state_data_set = data_set
+            state_data_set = state_data_set[(state_data_set.CountryCode == state)]
+            percentage = int(state_data_set.iloc[0][5])
+            rows.append(state)
+            rows.append(percentage)
+            map_data.append(rows)
+        return map_data
 
 
 
