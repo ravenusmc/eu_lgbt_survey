@@ -51,13 +51,18 @@ section {
 }
 
 #poetryDiv {
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 25px;
   width: 50%;
-  height: 70%;
+  height: 88%;
+  top: 4%;
+  left: 10%;
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
   margin-left: 50px;
