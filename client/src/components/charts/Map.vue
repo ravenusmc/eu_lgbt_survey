@@ -10,17 +10,20 @@
       :options="options">
       </vue-chart>
     </section>
+    <Background/>
   </div>
 </template>
 
 <script>
 import { mapGetters } from 'vuex';
 import MapForm from '@/components/forms/MapForm.vue';
+import Background from '@/components/mapPage/Background.vue';
 
 export default {
   name: 'EuropeMap',
   components: {
     MapForm,
+    Background,
   },
   data() {
     return {
