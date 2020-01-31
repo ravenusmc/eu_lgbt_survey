@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1 class='font center'>Map Area</h1>
+    <header>
+      <h1 class='mapTitle font center'>Map Page</h1>
+    </header>
     <MapForm/>
     <section id='map_section'>
       <vue-chart id='map_section'
@@ -53,6 +55,17 @@ export default {
 </script>
 
 <style scoped>
+
+header {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.mapTitle {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
 #map_section {
   display: flex;
   flex-direction: column;

@@ -2,36 +2,39 @@
   <div>
     <form @submit="submitForm">
 
-      <div class='selectionFix'>
-        <h3 class='font formTitles'>Select the Question:</h3>
-        <select v-model="question" name="question">
-          <option v-for="question in questions" v-bind:key="question" :value="question">
-            {{ question }}
-          </option>
-        </select>
-      </div>
+      <v-card class="mx-auto">
+        <v-card-text class='formFix'>
+          <div>Select the Question:</div>
+          <div class="select is-info is-rounded">
+            <select v-model="question" name="question">
+              <option v-for="question in questions" v-bind:key="question" :value="question">
+                {{ question }}
+              </option>
+            </select>
+          </div>
+          <div>Select the Answer to be examined:</div>
+          <div class="select is-info is-rounded">
+            <select v-model="answer" name="answer">
+              <option v-for="answer in answers" v-bind:key="answer" :value="answer">
+                {{ answer }}
+              </option>
+            </select>
+          </div>
+          <div>Select the Sex Choice::</div>
+          <div class="select is-info is-rounded">
+            <select v-model="sex" name="sex">
+              <option v-for="sex in sexChoices" v-bind:key="sex" :value="sex">
+                {{ sex }}
+              </option>
+            </select>
+          </div>
+          <div class='selectionFix'>
+            <button>Submit</button>
+          </div>
+        </v-card-text>
+      </v-card>
 
-      <div class='selectionFix'>
-        <h3 class='font formTitles'>Select the Answer to be examined:</h3>
-        <select v-model="answer" name="answer">
-          <option v-for="answer in answers" v-bind:key="answer" :value="answer">
-            {{ answer }}
-          </option>
-        </select>
-      </div>
 
-      <div class='selectionFix'>
-        <h3 class='font formTitles'>Select the Sex Choice:</h3>
-        <select v-model="sex" name="sex">
-          <option v-for="sex in sexChoices" v-bind:key="sex" :value="sex">
-            {{ sex }}
-          </option>
-        </select>
-      </div>
-
-      <div class='selectionFix'>
-        <button>Submit</button>
-      </div>
     </form>
   </div>
 </template>
@@ -81,6 +84,13 @@ form {
   align-items: center;
   background-color: #00AFC9;
   padding: 20px;
+}
+
+.formFix {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .selectionFix {

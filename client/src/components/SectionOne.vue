@@ -1,7 +1,6 @@
 <template>
   <div>
       <form @submit="submitSelection">
-
         <v-card class="mx-auto">
           <v-card-text>
             <div>Please Select from the Below:</div>
