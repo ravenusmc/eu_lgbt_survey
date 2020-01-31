@@ -13,6 +13,7 @@
           was working on another project but decided to download the data so that
           I would have it.
         </p>
+        <br>
         <p>
           I finally have decided to work on this issue and I'm interested in what
           the data will show me in regards to LGBT rights in Europe. I have this

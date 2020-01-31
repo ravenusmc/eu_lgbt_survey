@@ -2,30 +2,30 @@
   <div>
       <form @submit="submitSelection">
 
-        <h1 class='formTitle form center'>Please Select from the Below:</h1>
-
-        <div class='selectionFix'>
-          <h3 class='font formTitles'>Select the Country:</h3>
-          <select v-model="state" name="state">
-            <option v-for="state in states" v-bind:key="state" :value="state">
-              {{ state }}
-            </option>
-          </select>
-        </div>
-
-        <div class='selectionFix'>
-          <h3 class='font formTitles'>Select the Orientation:</h3>
-          <select v-model="orientation" name="orientation">
-            <option v-for="orientation in orientations" v-bind:key="orientation"
-            :value="orientation">
-              {{ orientation }}
-            </option>
-          </select>
-        </div>
-
-        <div class='selectionFix'>
-          <button class='font formTitles'>Submit</button>
-        </div>
+        <v-card class="mx-auto">
+          <v-card-text>
+            <div>Please Select from the Below:</div>
+            <div>Select the Country:</div>
+            <div class="select is-info is-rounded">
+              <select v-model="state" name="state">
+                <option v-for="state in states" v-bind:key="state" :value="state">
+                  {{ state }}</option>
+              </select>
+            </div>
+            <div>Select the Sex:</div>
+            <div class="select is-info is-rounded">
+              <select v-model="orientation" name="orientation">
+                <option v-for="orientation in orientations" v-bind:key="orientation"
+                :value="orientation">
+                  {{ orientation }}
+                </option>
+              </select>
+            </div>
+            <div class='selectionFix'>
+              <button class='font formTitles'>Submit</button>
+            </div>
+          </v-card-text>
+        </v-card>
       </form>
   </div>
 </template>
@@ -49,7 +49,7 @@ export default {
   },
   methods: {
     ...mapActions([
-      'fetchQuestionOneData',
+      'fetchChartData',
     ]),
     submitSelection(evt) {
       evt.preventDefault();
@@ -78,7 +78,6 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 67%;
   padding: 75px;
   background-color: #00AFC9;
 }
