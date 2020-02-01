@@ -1,7 +1,9 @@
 <template>
   <div>
     <header>
-      <h1 class='mapTitle font center'>Map Page</h1>
+      <div>
+        <h1 class='mapTitle font center'>Map Page</h1>
+      </div>
     </header>
     <MapForm/>
     <section id='map_section'>
@@ -57,12 +59,26 @@ export default {
 <style scoped>
 
 header {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../assets/img/europeMap.jpg');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+
+header div {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
 }
 
 .mapTitle {
-  font-size: 25px;
+  font-size: 100px;
   text-transform: uppercase;
 }
 
