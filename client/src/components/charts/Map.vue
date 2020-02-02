@@ -5,6 +5,7 @@
         <h1 class='mapTitle font center'>Map Page</h1>
       </div>
     </header>
+    <MapInfo/>
     <MapForm/>
     <section id='map_section'>
       <vue-chart id='map_section'
@@ -20,6 +21,7 @@
 
 <script>
 import { mapGetters } from 'vuex';
+import MapInfo from '@/components/mapPage/Info.vue';
 import MapForm from '@/components/forms/MapForm.vue';
 import Background from '@/components/mapPage/Background.vue';
 
@@ -28,6 +30,7 @@ export default {
   components: {
     MapForm,
     Background,
+    MapInfo,
   },
   data() {
     return {
@@ -78,7 +81,7 @@ header div {
 }
 
 .mapTitle {
-  font-size: 100px;
+  font-size: 40px;
   text-transform: uppercase;
 }
 
