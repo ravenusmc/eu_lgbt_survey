@@ -3,7 +3,7 @@
 
     <!-- Header area -->
     <div class='about_header'>
-      <h1 class='font center'>About Me</h1>
+      <h1 class='title font center'>About Me</h1>
     </div>
     <!-- End of Header Area -->
 
@@ -32,7 +32,7 @@
           in web development has now become a guiding passion and I am excited
           to bring that passion to my next pursuit.
         </p>
-
+        <br/>
         <p>
           The experience I have earned in the Marine Corps and C.I.A. has awarded
           me confidence and ability to be successful in any field. I’ve proven an
@@ -44,7 +44,7 @@
           planned 15 convoys across South Korea moving over 1,000 pieces of decking,
           tents and aircraft equipment.
         </p>
-
+        <br/>
         <p>
           I love meeting new people and inspiring innovative digital solutions,
           so feel free to send me an invite; I’d love to connect with you.
@@ -74,12 +74,8 @@ export default {
 
 <style lang="css" scoped>
 
-  .center {
-    text-align: center;
-  }
-
-  .font {
-    font-family: 'Baskervville', serif;
+  .title {
+    font-size: 50px;
   }
 
   .about_header {

@@ -43,7 +43,7 @@ export default {
     return {
       typeOne: 'BarChart',
       chartOptionsOne: {
-        title: 'Question 1',
+        title: 'In your opinion, how widespread is offensive language about lesbian, gay, bisexual and/or transgender people by politicians in the country where you live?',
         legend: { position: 'top' },
         height: 500,
         vAxis: {
@@ -53,7 +53,7 @@ export default {
         },
       },
       chartOptionsTwo: {
-        title: 'Question 2',
+        title: 'In your opinion, how widespread is same-sex partners holding hands in public in the country where you live?',
         legend: { position: 'top' },
         height: 500,
         vAxis: {
@@ -63,7 +63,7 @@ export default {
         },
       },
       chartOptionsThree: {
-        title: 'Question 3',
+        title: 'In your opinion, how widespread are expressions of hatred and aversion towards lesbian, gay, bisexual and/or transgender in public in the country where you live?',
         legend: { position: 'top' },
         height: 500,
         vAxis: {
@@ -73,7 +73,7 @@ export default {
         },
       },
       chartOptionsFour: {
-        title: 'Question 4',
+        title: 'In your opinion, how widespread are assaults and harassment against lesbian, gay, bisexual and/or transgender people in the country where you live?',
         legend: { position: 'top' },
         height: 500,
         vAxis: {
@@ -83,7 +83,7 @@ export default {
         },
       },
       chartOptionsFive: {
-        title: 'Question 5',
+        title: 'In your opinion, how widespread is same-sex partners holding hands in public in the country where you live?',
         legend: { position: 'top' },
         height: 500,
         vAxis: {
