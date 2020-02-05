@@ -62,6 +62,7 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   height: 600px;
+  border-radius: 10px;
 }
 
 #paragraphDiv {

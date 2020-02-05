@@ -26,6 +26,8 @@
       :data='questionFiveData'
       :options='chartOptionsFive'>
       </GraphCard>
+      <div id='picDiv'>
+      </div>
     </section>
   </div>
 </template>
@@ -110,6 +112,15 @@ export default {
 section {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+#picDiv {
+  background-image: url('../assets/img/bar_chart.jpg');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  border-radius: 10px;
 }
 
 /* Media Queries */
