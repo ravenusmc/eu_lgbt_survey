@@ -1,5 +1,8 @@
 <template>
   <div>
+    <div id='studyTitleArea'>
+      <h1 class='font center'>Results For: State: {{ state }}, Orientation: {{ orientation }}</h1>
+    </div>
     <section>
       <GraphCard
       :typeOne='typeOne'
@@ -41,8 +44,11 @@ export default {
   components: {
     GraphCard,
   },
+  props: ['state', 'orientation'],
   data() {
     return {
+      // state: 'Austria',
+      // orientation: 'Lesbian',
       typeOne: 'BarChart',
       chartOptionsOne: {
         title: 'In your opinion, how widespread is offensive language about lesbian, gay, bisexual and/or transgender people by politicians in the country where you live?',
@@ -109,6 +115,13 @@ export default {
 </script>
 
 <style>
+#studyTitleArea {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
 section {
   display: grid;
   grid-template-columns: 1fr 1fr;

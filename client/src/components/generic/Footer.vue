@@ -2,7 +2,7 @@
   <div>
     <footer>
       <div class='footer_fix'>
-        <h2>Copyright &copy; 2019 Double Sun Productions<br></h2>
+        <h2 class='footerTitle font'>Copyright &copy; 2020 Double Sun Productions<br></h2>
           <div>
             <a href="https://www.linkedin.com/in/mcuddy1/"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
             <a href="https://twitter.com/mcuddy7"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
@@ -42,6 +42,11 @@ footer {
   justify-content: center;
   margin-bottom: 50px;
   padding-top: 50px;
+}
+
+.footerTitle {
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
 </style>

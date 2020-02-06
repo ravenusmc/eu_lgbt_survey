@@ -11,7 +11,7 @@
                   {{ state }}</option>
               </select>
             </div>
-            <div>Select the Sex:</div>
+            <div>Select the Orientation:</div>
             <div class="select is-info is-rounded">
               <select v-model="orientation" name="orientation">
                 <option v-for="orientation in orientations" v-bind:key="orientation"
@@ -57,6 +57,7 @@ export default {
         orientation: this.orientation,
       };
       this.fetchChartData({ payload });
+      this.$emit('changeTitle', { payload });
     },
   },
 };

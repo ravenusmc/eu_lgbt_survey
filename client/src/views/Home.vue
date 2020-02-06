@@ -2,10 +2,10 @@
   <div class="home">
     <Intro />
     <section id='formSection'>
-      <SectionOne/>
+      <SectionOne v-on:changeTitle="updateTitle($event)"/>
       <Questions/>
     </section>
-    <Study/>
+    <Study :state='state' :orientation='orientation'/>
     <hr>
     <Footer/>
   </div>
@@ -27,8 +27,21 @@ export default {
     Questions,
     Intro,
     Study,
-    // Map,
     Footer,
+  },
+  data() {
+    return {
+      state: 'Austria',
+      orientation: 'Lesbian',
+    };
+  },
+  methods: {
+    updateTitle(data) {
+      // console.log(data.payload.state);
+      this.state = data.payload.state;
+      this.orientation = data.payload.orientation;
+      console.log(this.state);
+    },
   },
 };
 </script>
