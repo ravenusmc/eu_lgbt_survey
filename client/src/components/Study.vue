@@ -47,8 +47,6 @@ export default {
   props: ['state', 'orientation'],
   data() {
     return {
-      // state: 'Austria',
-      // orientation: 'Lesbian',
       typeOne: 'BarChart',
       chartOptionsOne: {
         title: 'In your opinion, how widespread is offensive language about lesbian, gay, bisexual and/or transgender people by politicians in the country where you live?',

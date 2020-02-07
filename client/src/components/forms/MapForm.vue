@@ -20,7 +20,7 @@
               </option>
             </select>
           </div>
-          <div>Select the Sex Choice::</div>
+          <div>Select the Orientation Choice:</div>
           <div class="select is-info is-rounded">
             <select v-model="sex" name="sex">
               <option v-for="sex in sexChoices" v-bind:key="sex" :value="sex">

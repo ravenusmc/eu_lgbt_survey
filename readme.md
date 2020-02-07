@@ -4,7 +4,7 @@
 The data from this project came from Kaggle, as usual, and can be found here:
 https://www.kaggle.com/ruslankl/european-union-lgbt-survey-2012 I first stumbed
 upon this data a few months ago and thought it would be an interesting project to
-do. 
+do.
 
 
 # Getting started
@@ -37,4 +37,4 @@ as well as npm.
 
 # Preview
 
-To see a video that talks about this project please go here: COMING SOON
+To see a video that talks about this project please go here: https://www.youtube.com/watch?v=kntDu0QaaaM
